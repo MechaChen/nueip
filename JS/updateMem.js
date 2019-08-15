@@ -32,10 +32,11 @@ $(document).ready(() => {
         gender: $("#gender").val(),
         birth: $("#birth").val(),
         email: $("#email").val(),
-        note: $("#email").val()
+        note: $("#note").val()
       },
       type: "POST",
       success(data) {
+        alert("變更成功");
         const { account, name } = JSON.parse(data);
         $(`#${account}`)
           .next()

@@ -19,7 +19,7 @@ $("#saveAddBtn").click(() => {
       gender: $("#gender").val(),
       birth: $("#birth").val(),
       email: $("#email").val(),
-      note: $("#email").val()
+      note: $("#note").val()
     },
     type: "POST",
     success(data) {
