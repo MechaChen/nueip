@@ -51,7 +51,7 @@
       ?>
       <div class="row">
         <input type="hidden" class="account" id="<?php echo $memRow["account"]; ?>" name="account" value="<?php echo $memRow["account"]; ?>">
-        <span class="col"><?php echo $memRow["name"]; ?></span>
+        <span class="col name"><?php echo $memRow["name"]; ?></span>
         <button class="updateBtn btn btn-info" data-toggle="modal" data-target="#edit">
           編輯
         </button>
@@ -177,15 +177,17 @@
             </button>
           </div>
           <div class="modal-body">
+            
           </div>
           <div class="modal-footer">
-            <button
+              <button
               type="button"
               class="btn btn-secondary"
               data-dismiss="modal"
-            >
+              >
               關閉
             </button>
+            <input type="hidden" id="d_account" name="account" value="">
             <button id="confirmDeleteBtn" class="btn btn-danger" data-dismiss="modal">確認刪除</button>
           </div>
         </div>
